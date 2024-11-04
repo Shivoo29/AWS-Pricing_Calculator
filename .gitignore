@@ -1,0 +1,31 @@
+# Don't include anything installed into the virtualenv by pip
+.Python
+bin
+lib
+include
+pip-selfcheck.json
+# We don't need compiled Python artifacts in the repo
+__pycache__
+*egg-info
+*.pyc
+*.pyo
+.idea/*
+.serverless/*
+
+awspricecalculator/data/*
+
+# ignore vendored files
+vendored
+
+#temporarily out
+awspricecalculator/s3*
+awspricecalculator/common/utils.py
+scripts/ec2-pricing.py
+scripts/rds-pricing.py
+scripts/s3-pricing.py
+scripts/lambda-pricing.py
+scripts/dynamodb-pricing.py
+scripts/kinesis-pricing.py
+scripts/context.py
+scripts/propagate-lambda-code.py
+
